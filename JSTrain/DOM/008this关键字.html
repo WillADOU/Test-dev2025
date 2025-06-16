@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  -->
+
+    <script>
+        // this 关键字指向当前对象
+        // 在函数中，this 指向调用该函数的对象
+        // 在事件处理函数中，this 指向触发事件的元素
+
+/*         function showThis() {
+            console.log(this);
+        }
+
+        showThis(); // 在全局作用域中调用，this 指向 window  */
+        
+/*         var obj = {
+            name: 'Object',
+            method: function() {
+                console.log("`1234",this.name); // this 指向 obj
+            }
+        };
+        obj.method(); // 调用 obj 的方法，this 指向 obj */
+
+
+        setTimeout(function() {
+            console.log(this); // 在 setTimeout 中，this 指向 window
+        }, 2000);
+    </script>
+</body>
+</html>

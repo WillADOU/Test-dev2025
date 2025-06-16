@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #box {
-            height: 100px;
-            background-color: yellow;
-        }
+      #box {
+        height: 100px;
+        background-color: yellow;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div id="box" style="width: 100px; color: black;">111111</div>
+  <body>
+    <div id="box" style="width: 100px; color: black">111111</div>
 
     <script>
-        //行类样式方法,style属性
-        //  console.log(box.style.width); // 100px
-        //  console.log(box.style.color); // black
+      //行类样式方法,style属性
+      //  console.log(box.style.width); // 100px
+      //  console.log(box.style.color); // black
 
-        //内部样式 外部样式，行内 getComputedStyle 不能赋值，写入时会报错
-        console.log(getComputedStyle(box).width); // 100px
-        console.log(getComputedStyle(box).color); // rgb(0, 0, 0)
+      //内部样式 外部样式，行内 getComputedStyle 不能赋值，写入时会报错
+      console.log(getComputedStyle(box).width); // 100px
+      console.log(getComputedStyle(box).color); // rgb(0, 0, 0)
+      console.log(getComputedStyle(box).color); // rgb(0, 0, 0)
+      console.log(getComputedStyle(box).color); // rgb(0, 0, 0)
+      console.log(getComputedStyle(box).color); // rgb(0, 0, 0)
+      console.log(getComputedStyle(box).color); // rgb(0, 0, 0)
+
+      /*
+       */
     </script>
-</body>
-
+  </body>
 </html>
